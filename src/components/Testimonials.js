@@ -2,8 +2,8 @@ import React from 'react'
 
 function Testimonials() {
   return (
-    <div className="bg-gray-800 text-gray-100 sm:px-8 py-12">
-  <div className="relative max-w-screen-xl mt-24 px-8 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto bg-gray-100 text-gray-900 sm:rounded-lg shadow-lg">
+    <div className="bg-gray-100 text-gray-800 sm:px-8 py-12">
+  <div className="relative max-w-screen-xl mt-24 px-8 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto bg-white text-gray-900 sm:rounded-lg shadow-lg">
     <div className="absolute right-0 bottom-0 hero-pattern w-64 h-56"></div>
     <div className="relative">
       <div>

@@ -1,0 +1,6 @@
+.wrapper{
+    display:grid;
+    height: auto;
+    place-items:center;
+    padding: 10px;
+  }
