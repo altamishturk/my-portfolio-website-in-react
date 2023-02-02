@@ -10,7 +10,7 @@ import Hero from "./components/Hero";
 
 function App() {
   return (
-    <div className="">
+    <div className="overflow-hidden">
       <Header/>
       <Hero/>
       <About/>

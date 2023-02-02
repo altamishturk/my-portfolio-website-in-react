@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import 'react-circular-progressbar/dist/styles.css';
 import { CircularProgressbar,buildStyles } from 'react-circular-progressbar';
-
+import Section from './Section';
 
 function Skills() {
 
@@ -73,7 +73,24 @@ function Skills() {
 
   return (
     <>
-    <section className="bg-white text-gray-800 sm:px-8 py-12">
+    <Section title="Skills">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:mx-12">
+          <div className='grid grid-cols-2 gap-6 p-4'>
+             {
+               skills.map(sk => <Skill key={sk.skill} skill={sk} handleSelect={handleSelect}/>)
+             }
+           </div>
+           <div className='p-4 w-[100%] md:w-[50%] flex justify-center items-center'>
+              <div className='w-[200px] h-[200px]'>
+                 <CircularProgressbar 
+                 styles={buildStyles({pathColor: 'rgb(37 99 235)',textColor: 'rgb(37 99 235)'})} 
+                 value={currentSkill.percent} 
+                 text={`${currentSkill.percent}%`} />;
+              </div>
+           </div>
+          </div>
+    </Section>
+    {/* <section className="bg-white text-gray-800 sm:px-8 py-12">
       <div className="relative max-w-screen-xl mt-24 px-8 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto bg-gray-100 text-gray-900 sm:rounded-lg shadow-lg">
         <div className="absolute right-0 bottom-0 hero-pattern w-64 h-56"></div>
         <div className="relative">
@@ -100,27 +117,8 @@ function Skills() {
           </div>
         </div>
       </div>
-    </section>
+    </section> */}
     </>
-    // <section className='sm:px-8 py-12'>
-    //   <div className='container mx-auto rounded-lg shadow-lg'>
-    //     <div className='flex items-center justify-center'>
-    //       <div className='grid grid-cols-2 gap-6 p-4'>
-    //         {
-    //           skills.map(sk => <Skill key={sk.skill} skill={sk} handleSelect={handleSelect}/>)
-    //         }
-    //       </div>
-    //       <div className='p-4 w-[100%] md:w-[50%] flex justify-center items-center'>
-    //          <div className='w-[200px] h-[200px]'>
-    //             <CircularProgressbar 
-    //             styles={buildStyles({pathColor: 'rgb(37 99 235)',textColor: 'rgb(37 99 235)'})} 
-    //             value={currentSkill.percent} 
-    //             text={`${currentSkill.percent}%`} />;
-    //          </div>
-    //       </div>
-    //     </div>
-    //   </div>
-    // </section>
   )
 }
 

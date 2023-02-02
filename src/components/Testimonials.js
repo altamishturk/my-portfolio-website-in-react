@@ -1,20 +1,14 @@
-import React from 'react'
+import React from 'react';
+import Section from './Section';
+
 
 function Testimonials() {
   return (
-    <div className="bg-gray-100 text-gray-800 sm:px-8 py-12">
-  <div className="relative max-w-screen-xl mt-24 px-8 md:px-12 lg:px-16 xl:px-32 py-16 mx-auto bg-white text-gray-900 sm:rounded-lg shadow-lg">
-    <div className="absolute right-0 bottom-0 hero-pattern w-64 h-56"></div>
-    <div className="relative">
-      <div>
-        <h2 className="text-center text-gray-800 text-4xl lg:text-5xl font-bold leading-tight">Testimonials</h2>
-        <div className="my-4 mx-auto w-12 h-2 border-4 border-indigo-500"></div>
-        <div className="text-center text-gray-700 font-light">Here are what some of our amazing customers are
-          saying ...</div>
-      </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:mx-12">
+    <>
+    <Section background="bg-gray-100" title="Testimonials">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:mx-12">
         <div
-          className="relative mx-auto mt-8 rounded-lg shadow max-w-sm p-10 bg-gray-100 text-gray-700 leading-snug flex flex-col justify-between">
+          className="relative mx-auto mt-8 rounded-lg shadow max-w-sm p-10 bg-white text-gray-700 leading-snug flex flex-col justify-between">
           <div className="-ml-4">
             <svg className="w-8 opacity-25 text-indigo-500" xmlns="http://www.w3.org/2000/svg"
               shapeRendering="geometricPrecision" text-rendering="geometricPrecision" imageRendering="optimizeQuality"
@@ -45,7 +39,7 @@ function Testimonials() {
           </div>
         </div>
         <div
-          className="mx-auto mt-8 rounded-lg shadow max-w-sm p-10 bg-gray-100 text-gray-700 leading-snug flex flex-col justify-between">
+          className="mx-auto mt-8 rounded-lg shadow max-w-sm p-10 bg-white text-gray-700 leading-snug flex flex-col justify-between">
           <div className="-ml-4">
             <svg className="w-8 opacity-25 text-indigo-500" xmlns="http://www.w3.org/2000/svg"
               shapeRendering="geometricPrecision" text-rendering="geometricPrecision" imageRendering="optimizeQuality"
@@ -76,9 +70,8 @@ function Testimonials() {
           </div>
         </div>
       </div>
-    </div>
-  </div>
-    </div>
+    </Section>
+    </>
   )
 }
 
