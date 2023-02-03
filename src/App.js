@@ -6,6 +6,7 @@ import Work from "./components/Work";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
+import Expireance from "./components/Expireance"
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
     <div className="overflow-hidden">
       <Header/>
       <Hero/>
+      <Expireance/>
       <About/>
       <Skills/>
       <Testimonials/>

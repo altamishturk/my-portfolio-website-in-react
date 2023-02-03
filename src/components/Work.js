@@ -5,9 +5,17 @@ import Section from "./Section";
 function Work() {
   return (
     <Section title="Work">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:mx-12">
+          {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:mx-12">
             <MyWork/>
             <MyWork/>
+          </div> */}
+          <div className="flex flex-wrap">
+          <MyWork/>
+          <MyWork/>
+          <MyWork/>
+          <MyWork/>
+          <MyWork/>
+          <MyWork/>
           </div>
     </Section>
     // <section className="bg-white text-gray-800 sm:px-8 py-12">
@@ -34,42 +42,28 @@ export default Work;
 function MyWork() {
   return (
     <>
-      <div className="grid place-items-center p-5 h-auto  bg-gray-100 rounded-lg antialiased text-gray-900">
-        <div>
-          <img
-            src="https://source.unsplash.com/random/350x350"
-            alt=" random imgee"
-            className="w-full object-cover object-center rounded-lg shadow-md"
-          />
-
-          <div className="relative px-4 -mt-16  ">
-            <div className="bg-white p-6 rounded-lg shadow-lg">
-              <div className="flex items-baseline">
-                <span className="bg-teal-200 text-teal-800 text-xs px-2 inline-block rounded-full  uppercase font-semibold tracking-wide">
-                  New
-                </span>
-                <div className="ml-2 text-gray-600 uppercase text-xs font-semibold tracking-wider">
-                  2 baths &bull; 3 rooms
-                </div>
-              </div>
-
-              <h4 className="mt-1 text-xl font-semibold uppercase leading-tight truncate">
-                A random Title
-              </h4>
-
-              <div className="mt-1">
-                $1800
-                <span className="text-gray-600 text-sm"> /wk</span>
-              </div>
-              <div className="mt-4">
-                <span className="text-teal-600 text-md font-semibold">
-                  4/5 ratings{" "}
-                </span>
-                <span className="text-sm text-gray-600">
-                  (based on 234 ratings)
-                </span>
-              </div>
-            </div>
+      <div class="w-full px-4 md:w-1/2 xl:w-1/3">
+        <div class="relative mb-12">
+          <div class="overflow-hidden rounded-lg">
+            <img
+              src="https://cdn.tailgrids.com/2.0/image/marketing/images/portfolio/portfolio-01/image-01.jpg"
+              alt="portfolio"
+              class="w-full"
+            />
+          </div>
+          <div
+            class="relative z-10 mx-7 -mt-20 rounded-lg bg-white py-9 px-3 text-center shadow-lg"
+          >
+            <span class="text-primary mb-2 block text-sm font-semibold">
+              Branding
+            </span>
+            <h3 class="text-dark mb-4 text-xl font-bold">Branding Design</h3>
+            <a
+              href="/"
+              class="text-body-color hover:bg-primary hover:border-primary inline-block rounded-md border py-3 px-7 text-sm font-semibold transition hover:text-white"
+            >
+              View Details
+            </a>
           </div>
         </div>
       </div>
