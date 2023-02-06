@@ -22,7 +22,7 @@ function Skills() {
   return (
     <>
     <Section title="Skills">
-      <div className='flex justify-center items-center gap-10 flex-wrap'>
+      <div className='flex  justify-center items-center gap-10 flex-wrap'>
         {
           skills.map((still,i) => <img key={i} src={still} alt={still} width={80}/>)
         }
