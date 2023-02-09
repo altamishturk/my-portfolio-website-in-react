@@ -71,26 +71,26 @@ function Testimonial({testimonial,i}){
 
   return (
     <>
-<div class={`${i%2 === 0? "mr-auto":"ml-auto "} max-w-5xl shadow-lg`}>
-  <section class="rounded-lg bg-white p-8">
-    <div class="grid grid-cols-1 gap-12 sm:grid-cols-3 sm:items-center">
+<div className={`${i%2 === 0? "mr-auto":"ml-auto "} max-w-5xl shadow-lg`}>
+  <section className="rounded-lg bg-white p-8">
+    <div className="grid grid-cols-1 gap-12 sm:grid-cols-3 sm:items-center">
       
       {
          i%2 === 0 &&  <img
               alt="persion"
               src={testimonial.img}
-              class="aspect-square w-full rounded-lg object-cover"
+              className="aspect-square w-full rounded-lg object-cover"
               />
       }
 
-      <blockquote class="sm:col-span-2">
-        <p class="text-xl font-medium sm:text-2xl">
+      <blockquote className="sm:col-span-2">
+        <p className="text-xl font-medium sm:text-2xl">
           {testimonial.description}
         </p>
 
-        <cite class="mt-8 inline-flex items-center not-italic">
-          <span class="hidden h-px w-6 bg-gray-400 sm:inline-block"></span>
-          <p class="flex items-center text-sm uppercase text-gray-500 sm:ml-3">
+        <cite className="mt-8 inline-flex items-center not-italic">
+          <span className="hidden h-px w-6 bg-gray-400 sm:inline-block"></span>
+          <p className="flex items-center text-sm uppercase text-gray-500 sm:ml-3">
             <strong>{testimonial.name}</strong>, {testimonial.country}
             <img 
             src={testimonial.flag} 
@@ -105,7 +105,7 @@ function Testimonial({testimonial,i}){
          i%2 !== 0 &&  <img
               alt="persion"
               src={testimonial.img}
-              class="aspect-square w-full rounded-lg object-cover"
+              className="aspect-square w-full rounded-lg object-cover"
               />
       }
     </div>
