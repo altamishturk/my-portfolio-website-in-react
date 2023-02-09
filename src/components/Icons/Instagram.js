@@ -2,7 +2,7 @@ import React from 'react'
 
 function Instagram() {
   return (
-        <a href="/" className="ml-3 text-gray-500">
+        <a href="https://www.instagram.com/altamish_turk/" className="ml-3 text-gray-500">
             <svg
               fill="none"
               stroke="currentColor"

@@ -67,7 +67,7 @@ function Skills() {
 
   return (
     <>
-    <Section title="Skills">
+    <Section title="Skills" description="The following are the skills I consider myself to be competent in">
       <div className='flex  justify-center items-center gap-10 flex-wrap'>
         {
           skills.map((skill,i) => <Skill key={i} skill={skill}/>)

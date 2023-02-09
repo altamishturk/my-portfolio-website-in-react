@@ -2,7 +2,7 @@ import React from 'react'
 
 function Facebook() {
   return (
-      <a href="/" className="text-gray-500">
+      <a href="https://m.facebook.com/altamishturk" className="text-gray-500">
             <svg
               fill="currentColor"
               strokeLinecap="round"

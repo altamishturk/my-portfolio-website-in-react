@@ -6,6 +6,7 @@ function About() {
     <Section 
     background="bg-gray-100" 
     title="About"
+    description="The following information will provide you with an overview of who I am"
     >
        <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
             <div className="md:5/12 lg:w-5/12">

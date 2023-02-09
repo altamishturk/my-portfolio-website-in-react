@@ -2,7 +2,7 @@ import React from 'react'
 
 function LinkedIn() {
   return (
-      <a href="/" className="ml-3 text-gray-500">
+      <a href="https://www.linkedin.com/in/altamishturk" className="ml-3 text-gray-500">
             <svg
               fill="currentColor"
               stroke="currentColor"

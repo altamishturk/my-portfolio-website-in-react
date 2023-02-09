@@ -35,30 +35,6 @@ function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    // <header classNameNameName="fixed top-0 z-index-10 left-0 w-full text-white bg-white shadow-sm">
-    //     <nav classNameNameName="m-auto w-4/5 flex h-16 items-center justify-between bg-white">
-    //         <div>
-    //             <a href="/" classNameNameName="no-underline font-semibold text-black">Altamish</a>
-    //         </div>
-
-    //         <div classNameNameName="nav__menu" id="nav__menu">
-    //             <ul classNameNameName="flex list-none">
-    //                 <li classNameNameName="ml-12"><a href="#home" classNameNameName="no-underline font-semibold text-black active">Home</a></li>
-    //                 <li classNameNameName="ml-12"><a href="#about" classNameNameName="no-underline font-semibold text-black">About</a></li>
-    //                 <li classNameNameName="ml-12"><a href="#skills" classNameNameName="no-underline font-semibold text-black">Skills</a></li>
-    //                 <li classNameNameName="ml-12"><a href="#testimonials" classNameNameName="no-underline font-semibold text-black">Testimonials</a></li>
-    //                 <li classNameNameName="ml-12"><a href="#work" classNameNameName="no-underline font-semibold text-black">Work</a></li>
-    //                 <li classNameNameName="ml-12"><a href="#contact" classNameNameName="no-underline font-semibold text-black">Contact</a></li>
-    //             </ul>
-    //         </div>
-
-    //         <div classNameNameName="hidden" id="nav__toggle">
-    //             <i classNameNameName="fas fa-bars" id='menu'></i>
-    //             <i classNameNameName="fas fa-plus" id="plus"></i>
-    //         </div>
-    //     </nav>
-    // </header>
-   
     <header className="header sticky top-0 z-index-100 bg-white shadow-md">
         <div className='container mx-auto px-5 flex items-center justify-between py-02'>
           {/* <!-- logo --> */}

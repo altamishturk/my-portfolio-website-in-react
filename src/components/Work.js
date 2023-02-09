@@ -50,7 +50,7 @@ const projects = [
 
 function Work() {
   return (
-    <Section title="Work">
+    <Section title="Work" description="See what my projects looks like below if you're interested">
           <div className="flex flex-wrap">
           {
             projects.map((project,i) =>  <MyWork key={i} project={project}/>)
