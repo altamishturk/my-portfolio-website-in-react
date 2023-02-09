@@ -3,11 +3,12 @@ import Facebook from "./Icons/Facebook";
 import Instagram from "./Icons/Instagram";
 import LinkedIn from "./Icons/LinkedIn";
 import AltamishImg from "../assets/myImages/altamish5.jpg";
+// import bgImg from "../assets/background/background.jpg";
 
 function Hero() {
   return (
     <>
-      <section id='Home' className="min-h-[100vh] text-gray-600 body-font">
+      <section id='Home' className={`min-h-[100vh] text-gray-600 body-font `}>
         <div className="container h-[100vh] mx-auto flex px-5 py-24 items-center justify-center flex-col">
           <img 
           className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" 
