@@ -8,8 +8,8 @@ import AltamishImg from "../assets/myImages/altamish5.jpg";
 function Hero() {
   return (
     <>
-      <section id='Home' className={`min-h-[100vh] text-gray-600 body-font`}>
-        <div className="container h-[100vh] mx-auto flex px-5 py-24 items-center justify-center flex-col">
+      <section id='Home' className={`h-[100vh] min-h-[700px] text-gray-600 body-font`}>
+        <div className="container h-[100%] mx-auto flex px-5 py-24 items-center justify-center flex-col">
           <img 
           className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" 
           alt="hero" 
