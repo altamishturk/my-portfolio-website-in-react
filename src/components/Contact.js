@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Section from "./Section";
 
 function Contact() {
   const [data, setData] = useState({ name: "", email: "", message: "" });
   const [sending, setSending] = useState(false);
   const [sent, setSent] = useState(false);
+  const [ready, setReady] = useState(false);
+  
 
   const handleChange = (e) => {
     setData((prev) => {
@@ -13,9 +15,14 @@ function Contact() {
         [e.target.name]: e.target.value,
       };
     });
+
+    
   };
 
   const handleSubmit = async () => {
+    if(!ready){
+      return;
+    }
     const url = "https://impossible-puce-loafers.cyclic.app/api/v1/email";
     setSending(true);
     const res = await fetch(url, {
@@ -39,6 +46,17 @@ function Contact() {
       alert("someting went wrong");
     }
   };
+
+
+  useEffect(()=>{
+    const {email,name,message} = data;
+    if(!email || !name || !message){
+      setReady(()=>false);
+    }
+    else{
+      setReady(()=>true);
+    } 
+  },[data]);
 
   return (
     <Section
@@ -107,9 +125,9 @@ function Contact() {
           <div className="p-2 w-full">
             <button
               onClick={handleSubmit}
-              className="w-full text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+              className={`w-full text-white ${ready? "bg-green-500":"bg-green-500/50 cursor cursor-not-allowed"} border-0 py-2 px-8 focus:outline-none rounded text-lg`}
             >
-              {sending ? <span>Sending...</span> : <span>Sned</span>}
+              {sending ? <span>Sending...</span> : <span>Send</span>}
             </button>
           </div>
         </div>
