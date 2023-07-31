@@ -4,8 +4,8 @@ import project1 from "../assets/projects/1.JPG";
 import project2 from "../assets/projects/2.JPG";
 import project3 from "../assets/projects/3.JPG";
 import project17 from "../assets/projects/17.JPG";
-import project28 from "../assets/projects/28.JPG";
-import project18 from "../assets/projects/18.JPG";
+import project4 from "../assets/projects/4.JPG";
+import project38 from "../assets/projects/38.PNG";
 
 
 const projects = [
@@ -13,38 +13,38 @@ const projects = [
     img: project1,
     name: `One Stop Management Services`,
     link: "https://osm-services.com",
-    domainName: "osm-services.com"
+    domainName: "Portfolio"
   },
   {
     img: project2,
     name: `Brand Lab`,
     link: "https://www.212deg.com/",
-    domainName: "www.212deg.com"
+    domainName: "Business"
   },
   {
     img: project3,
     name: `Shenal's portFolio`,
     link: "https://www.shenalarimilli.com/",
-    domainName: "www.shenalarimilli.com"
+    domainName: "Portfolio"
   },
   {
     img: project17,
-    name: `Shenal's portFolio`,
+    name: `Text to Speak`,
     link: "https://text-to-speak-by-me.netlify.app/",
-    domainName: "text-to-speak-by-me.netlify.app"
+    domainName: "Text to Speak"
   },
   {
-    img: project28,
-    name: `Shenal's portFolio`,
-    link: "https://budget-and-expences-calculator.netlify.app/",
-    domainName: "budget-and-expences-calculator.netlify.app"
+    img: project38,
+    name: `Oasis Reality`,
+    link: "https://oasis-reality.netlify.app/",
+    domainName: "Property Management"
   },
   {
-    img: project18,
-    name: `Shenal's portFolio`,
+    img: project4,
+    name: `Website`,
     link: "https://chorpolath-map-data-visualization.netlify.app/",
-    domainName: "chorpolath-map-data-visualization.netlify.app"
-  },
+    domainName: "Fitness"
+  }
 ]
 
 
